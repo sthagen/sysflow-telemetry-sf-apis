@@ -1,23 +1,3 @@
-#!/usr/bin/env python3
-#
-# Copyright (C) 2019 IBM Corporation.
-#
-# Authors:
-# Frederico Araujo <frederico.araujo@ibm.com>
-# Teryl Taylor <terylt@ibm.com>
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 import json
 import os.path
 import decimal
@@ -31,6 +11,8 @@ if six.PY3:    from avro.schema import SchemaFromJSONData as make_avsc_object
 else:
     from avro.schema import make_avsc_object
     
+
+
 def __read_file(file_name):
     with open(file_name, "r") as f:
         return f.read()
@@ -48,7 +30,8 @@ __SCHEMAS = dict((n.fullname.lstrip("."), n) for n in six.itervalues(__NAMES.nam
 
 
 class SchemaClasses(object):
-       
+    
+    
     pass
     class sysflow(object):
         
@@ -1449,6 +1432,10 @@ class SchemaClasses(object):
                 CT_MESOS = "CT_MESOS"
                 CT_RKT = "CT_RKT"
                 CT_CUSTOM = "CT_CUSTOM"
+                CT_CRI = "CT_CRI"
+                CT_CONTAINERD = "CT_CONTAINERD"
+                CT_CRIO = "CT_CRIO"
+                CT_BPM = "CT_BPM"
                 
             class OIDClass(DictWrapper):
                 
@@ -1494,15 +1481,6 @@ class SchemaClasses(object):
                     #:param int value:
                     #"""
                     self._inner_dict['hpid'] = value
-
-                def __hash__(self):
-                    return hash((self.hpid, self.createTS))
-
-                def __eq__(self, other):
-                    return (self.hpid, self.createTS) == (other.hpid, other.createTS)
-
-                def __ne__(self, other):
-                    return not(self == other)
                 
                 
             class SFObjectStateClass(object):
