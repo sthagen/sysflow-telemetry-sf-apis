@@ -13,7 +13,43 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 > - **Fixed**: for any bug fixes.
 > - **Security**: in case of vulnerabilities.
 
-## [[UNRELEASED](https://github.com/sysflow-telemetry/sf-apis/compare/0.1.0-rc4...HEAD)]
+## [[UNRELEASED](https://github.com/sysflow-telemetry/sf-apis/compare/0.2.2...HEAD)]
+
+
+## [[0.2.2](https://github.com/sysflow-telemetry/sf-apis/compare/0.2.1...0.2.2)] - 2020-12-07
+
+### Changed
+
+- Fixed versions of Pandas and numpy in python APIs.
+
+
+## [[0.2.1](https://github.com/sysflow-telemetry/sf-apis/compare/0.2.0...0.2.1)] - 2020-12-02
+
+### Added
+
+- Adds flattened indices for file OID attributes in go API.
+
+## [[0.2.0](https://github.com/sysflow-telemetry/sf-apis/compare/0.1.0...0.2.0)] - 2020-12-01
+
+### Added
+
+- Implemented ProcessFlow support for sysprint.
+- Added mappings for sysdig system calls to support the Falco policy language.
+
+### Changed
+
+- Performance optimizations for golang APIs, including opflag and openflag map caching.
+
+## [[0.1.0](https://github.com/sysflow-telemetry/sf-apis/compare/0.1-rc4...0.1.0)] - 2020-10-30
+
+### Added
+
+- Implemented caching for opflags and openflags in golang APIs.
+
+### Changed
+
+- Refactored driver and plugin interface
+- Refactored golang libraries to use constants for flags.
 
 ## [[0.1.0-rc4](https://github.com/sysflow-telemetry/sf-apis/compare/0.1-rc3...0.1.0-rc4)] - 2020-08-10
 
