@@ -6,7 +6,7 @@
 
 # Supported tags and respective `Dockerfile` links
 
--	[`0.4.0`, `latest`](https://github.com/sysflow-telemetry/sf-apis/blob/0.4.0-rc1/Dockerfile), [`edge`](https://github.com/sysflow-telemetry/sf-apis/blob/master/Dockerfile), [`dev`](https://github.com/sysflow-telemetry/sf-apis/blob/dev/Dockerfile)
+-	[`0.4.0`, `latest`](https://github.com/sysflow-telemetry/sf-apis/blob/0.4.0-rc2/Dockerfile), [`edge`](https://github.com/sysflow-telemetry/sf-apis/blob/master/Dockerfile), [`dev`](https://github.com/sysflow-telemetry/sf-apis/blob/dev/Dockerfile)
 
 # Quick reference
 
@@ -84,7 +84,7 @@ docker run --rm -d --name sfnb -v $(pwd)/pynb:/home/jovyan/work -p 8888:8888 -e 
 
 # License
 
-View [license information](https://github.com/sysflow-telemetry/sf-exporter/blob/master/LICENSE.md) for the software contained in this image.
+View [license information](https://github.com/sysflow-telemetry/sf-apis/blob/master/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
