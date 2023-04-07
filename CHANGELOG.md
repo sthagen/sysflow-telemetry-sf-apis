@@ -15,12 +15,19 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-## [0.5.1] - 2022-12-20
+## [0.5.1] - 2023-05-30
 
 ### Added
 
 - Add Python graph API to process and visualize sysflow traces
 - Add k8s demo notebook
+- Add attributes cwd and env to process object
+
+### Changed
+
+- Improve exception handling in sysprint
+- Bump sysprint base image to ubi8/ubi-minimal:8.7-1085.1679482090
+- Bump sysprint docker image to use Python 3.9 (fix toml issue)
 
 ### Fixed
 
